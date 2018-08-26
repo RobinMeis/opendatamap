@@ -57,7 +57,7 @@ export function addToSidebar(sourceJSON, leafletMap, layerIoTMapperGatewaysLines
         IoTMapperDevice.push(mapper.name);
         $('#iotmapper-devices tbody').append('' +
             '<tr>' +
-            '    <td>' + mapper.name + '</td>' +
+            '    <td><a target="_blank" href="https://ttnmon.meis.space/console/#device-' + mapper.name + '">Node ' + mapper.name + '</a></td>' +
             '    <td>' +
             '        <div class="switch">' +
             '            <label>' +
