@@ -3,66 +3,16 @@
   "shortTitle": "OPDM Bonn/Rhein-Sieg",
   "modules": [
     {
-      "moduleName": "freifunk",
+      "moduleName": "ttnmon",
       "config": {
-        "layerName": "Freifunk Siegburg",
-        "standardActivated": true,
-        "dataURL": "https://map.freifunk-siegburg.de/data/nodes.json"
-      }
-    },
-    {
-      "moduleName": "freifunk",
-      "config": {
-        "layerName": "Freifunk Troisdorf",
-        "standardActivated": false,
-        "dataURL": "https://map.freifunk-troisdorf.de/data/nodes.json"
-      }
-    },
-    {
-      "moduleName": "freifunk",
-      "config": {
-        "layerName": "Freifunk Hennef",
-        "standardActivated": true,
-        "dataURL": "https://map.freifunk-hennef.de/data/nodes.json"
-      }
-    },
-    {
-      "moduleName": "iotmapper",
-      "config": {
-        "layerName": "IoT Mapper Hennef",
-        "dataURL": "https://map.bonn.codefor.de/assets/data/ttn_mapper.json",
+        "layerName": "TTNmon",
+        "dataURL": "https://api.ttnmon.meis.space/api/nodes/",
         "filterValue": 0.00005,
         "filterMapper": 900000,
         "standardActivated": true,
         "iotNodes": true,
-        "iotMapper": true,
         "iotGateways": true,
-        "iotGatewayLines": false
-      }
-    },
-    {
-      "moduleName": "open311",
-      "config": {
-        "standardActivated": true,
-        "layerName": "Open311 Bonn",
-        "dataURL": "https://anliegen.bonn.de/georeport/v2/requests.json?status=open",
-        "open311Nodes": true
-      }
-    },
-    {
-      "moduleName": "open311",
-      "config": {
-        "layerName": "Open311 Siegburg",
-        "standardActivated": true,
-        "dataURL": "https://anliegen.siegburg.de/georeport/v2/requests.json?status=open"
-      }
-    },
-    {
-      "moduleName": "open311",
-      "config": {
-        "layerName": "Open311 Köln",
-        "standardActivated": true,
-        "dataURL": "https://sags-uns.stadt-koeln.de/georeport/v2/requests.json?status=open"
+        "iotGatewayLines": true
       }
     }
   ],
